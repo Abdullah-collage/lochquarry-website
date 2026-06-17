@@ -1,0 +1,507 @@
+/* GLOBAL STYLES - Base styles and foundational layout settings */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behaviour: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef2f7;
+}
+
+.container {
+    min-height: 100%;
+    display: block;
+}
+
+
+/*NAVIGATION STYLES - Sticky top navigation bar with menu items*/
+
+nav {
+    background-color: #f97316;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 15px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+li a {
+    color: rgb(228, 235, 227);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+li a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(241, 239, 239, 0.35);
+    padding: 10px;
+    background-color: #d55a02;
+}
+
+
+/* MAIN CONTENT STYLES - Main container with border and rounded corners*/
+
+main {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 30px;
+    padding: 2px;
+    margin: 20px 20px 4px 20px;
+    max-width: 100vw;
+}
+
+#particles-js {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    height: 385.333px;
+}
+
+
+/* HEADER & HERO SECTION - Top banner with gradient background*/
+
+header {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.hero {
+    min-height: 60px;
+    overflow: hidden;
+    padding: 0px;
+    background: linear-gradient(135deg, #2652b1, #6ea8ea);
+}
+
+.hero-img img {
+    width: 100vw;
+    max-width: 1200px;
+    margin: 0px;
+    padding: 0;
+    border-radius: 5PX 5PX 25PX 25PX;
+    height: auto;
+}
+
+.hero-content h1 {
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 0rem 2.5rem 0.5rem 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*TEAM CARDS STYLES - Individual team member profile cards */
+
+.card-container {
+    padding: 1.25rem;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 30px;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.card-team {
+    width: 400px;
+    min-height: 765px;
+    overflow: hidden;
+    border-radius: 30px 0px 30px 0px;
+    background: linear-gradient(135deg, #0f172a, #4c1d95);
+    box-shadow: var(--shadow);
+    color: white;
+    margin: 20px;
+    padding: 2px;
+}
+
+.card-team img {
+    display: block;
+    justify-content: center;
+    width: 100%;
+    height: 400PX;
+    border-radius: 30px 0px 30px 0px;
+    object-fit: cover;
+}
+
+.tester {
+    opacity: 0.5;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.label {
+    margin: 0 0 4px 0;
+    font-weight: 600;
+    padding-left: 20px;
+    
+}
+
+.value {
+    margin: 0;
+    color: #98a6b9;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.name-team {
+    text-align: center;
+    color: #fcf7f7;
+    font-size: 30px;
+}
+
+.main-text {
+    display: block;
+    text-align: center;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+
+/*SERVICES & ACTIVITIES CARDS - Content cards with gradient and hover effects*/
+
+.card {
+    width: 500px;
+    overflow: hidden;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #0f172a, #4c1d95);
+}
+
+.card:hover {
+    transform: translateY(4px);
+    box-shadow: 14px 12px 24px rgba(245, 55, 55, 0.35);
+    padding: 10px;
+    opacity: 0.8;
+}
+
+.card img {
+    display: block;
+    justify-content: center;
+    width: 100%;
+    height: 400PX;
+    border-radius: 30px 0px 30px 0px;
+    object-fit: cover;
+}
+
+.card p {
+    color: #fcf7f7;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.card h2 {
+    text-align: center;
+    color: #fcf7f7;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+
+/* ============================================================================
+   GALLERY STYLES - Image gallery with featured image and thumbnail grid
+   ============================================================================ */
+
+#mainepage {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+}
+
+.gallery-main {
+    max-width: 1300px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.featured-area {
+    margin-bottom: 20px;
+}
+
+#featured-image {
+    width: 1000px;
+    height: 600px;
+    border: 6px solid white;
+    border-radius: 20px;
+    border: #d4b28b solid 7px;
+    max-width: 100%;
+    height: auto;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 100%;
+    border: 4px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    height: auto;
+}
+
+.thumbnail:hover {
+    border-color: orange;
+}
+
+#caption {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* ============================================================================
+   TESTIMONIAL SECTION STYLES - Customer testimonials with cards and ratings
+   ============================================================================ */
+
+.testimonial {
+    display: block;
+}
+
+.testimonial-lable {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    color: #1e293b;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.card-testimonial {
+    background: linear-gradient(135deg, #f5d0fe, #bfdbfe);
+    padding: 2rem;
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px -20px rgba(5, 5, 5, 0.24);
+    margin-bottom: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    grid-gap: 1rem;
+    gap: 1rem;
+}
+
+.header .image {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 9999px;
+    object-fit: cover;
+    background-color: royalblue;
+    flex-shrink: 0;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    grid-gap: 0.125rem;
+    gap: 0.125rem;
+    color: rgba(34, 197, 94, 1);
+}
+
+.stars svg {
+    height: 1rem;
+    width: 1rem;
+}
+
+.name {
+    margin-top: 0.25rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgba(55, 65, 81, 1);
+}
+
+.message {
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    margin-top: 1rem;
+    color: rgb(17, 18, 20);
+}
+
+.testimonial-container {
+    border-radius: 18px;
+    padding: 1.25rem;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+
+/*BUTTON STYLES - Call-to-action buttons with hover effects*/
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 999px;
+    background: #f97316;
+    color: white;
+    padding: 0.85rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 0 8px 18px rgba(249, 115, 22, 0.28);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(249, 115, 22, 0.35);
+}
+
+
+/*CONTACT US SECTION STYLES - Map embedding and phone link styling*/
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.aframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    border-radius: 50px;
+}
+
+.phone-link {
+    color: #f97316;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.phone-link:hover {
+    text-decoration: underline;
+    color: #d55a02;
+}
+
+
+/* FOOTER STYLES - Bottom section with gradient background and links*/
+
+footer {
+    background: #1c3d1c;
+    background: linear-gradient(90deg, rgba(28, 61, 28, 1) 0%, rgba(66, 184, 115, 1) 77%, rgba(175, 237, 83, 1) 100%);
+    text-align: center;
+    position: relative;
+    height: 100px;
+    margin-top: -10;
+    clear: both;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.footer {
+    color: #ffffff;
+}
+
+footer p {
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: #969a96;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #e6ece6;
+    text-decoration: underline;
+}
+
+
+.side-bar {
+    width: 250px;
+    height: 100vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #f97316;
+    display:none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 60px;
+    border-radius: 60px 0px 0px 0px;
+}
+.side-bar li {
+    width: 100%;
+    
+    
+}
+.side-bar li a {
+   
+    width: 100%;
+    
+}
