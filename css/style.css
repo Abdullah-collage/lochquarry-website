@@ -1,17 +1,12 @@
 /* GLOBAL STYLES - Base styles and foundational layout settings */
-
-* {
-    box-sizing: border-box;
-}
-
 html {
-    scroll-behaviour: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #eef2f7;
+   background: #eef2f7;
 }
 
 .container {
@@ -63,8 +58,31 @@ li a:hover {
 /* MAIN CONTENT STYLES - Main container with border and rounded corners*/
 
 main {
-    display: block;
+    display:block;
     justify-content: center;
+    align-items: center;
+   /* background: #f8fafc;*/
+    border: 1px solid #e5e7eb;
+    border-radius: 30px;
+    padding: 2px;
+    padding-bottom: 10px;
+    margin: 20px 20px 4px 20px;
+    max-width: 100vw;
+    gap: 10px;
+    text-align: center;
+    
+}
+.main-img{
+
+    width:50vw;
+    height:auto;
+    border-radius: 30px;
+    
+    
+}
+.main-contact{
+    display:block;
+    justify-content:left;
     align-items: center;
     background: #f8fafc;
     border: 1px solid #e5e7eb;
@@ -72,6 +90,11 @@ main {
     padding: 2px;
     margin: 20px 20px 4px 20px;
     max-width: 100vw;
+    gap: 10px;
+    text-align: center;
+    background-image: url("/images/nature/nature_3.jpg");
+    background-size: cover; 
+  
 }
 
 #particles-js {
@@ -144,7 +167,6 @@ header {
     overflow: hidden;
     border-radius: 30px 0px 30px 0px;
     background: linear-gradient(135deg, #0f172a, #4c1d95);
-    box-shadow: var(--shadow);
     color: white;
     margin: 20px;
     padding: 2px;
@@ -163,6 +185,7 @@ header {
     opacity: 0.5;
     text-align: center;
     padding-bottom: 10px;
+    color: #fcf7f7;
 }
 
 .label {
@@ -186,7 +209,7 @@ header {
 }
 
 .main-text {
-    display: block;
+    display:block;
     text-align: center;
     padding-left: 10px;
     font-size: 20px;
@@ -202,12 +225,7 @@ header {
     background: linear-gradient(135deg, #0f172a, #4c1d95);
 }
 
-.card:hover {
-    transform: translateY(4px);
-    box-shadow: 14px 12px 24px rgba(245, 55, 55, 0.35);
-    padding: 10px;
-    opacity: 0.8;
-}
+
 
 .card img {
     display: block;
@@ -237,9 +255,7 @@ header {
 }
 
 
-/* ============================================================================
-   GALLERY STYLES - Image gallery with featured image and thumbnail grid
-   ============================================================================ */
+/* GALLERY STYLES - Image gallery with featured image and thumbnail grid*/
 
 #mainepage {
     font-family: Arial, sans-serif;
@@ -298,9 +314,7 @@ header {
 }
 
 
-/* ============================================================================
-   TESTIMONIAL SECTION STYLES - Customer testimonials with cards and ratings
-   ============================================================================ */
+/* TESTIMONIAL SECTION STYLES - Customer testimonials with cards and ratings*/
 
 .testimonial {
     display: block;
@@ -367,7 +381,6 @@ header {
 
 .message {
     overflow: hidden;
-    -webkit-box-orient: vertical;
     margin-top: 1rem;
     color: rgb(17, 18, 20);
 }
@@ -403,6 +416,7 @@ button {
     background: #f97316;
     color: white;
     padding: 0.85rem 1.25rem;
+    margin-bottom: 10px;
     font-size: 1rem;
     font-weight: 700;
     box-shadow: 0 8px 18px rgba(249, 115, 22, 0.28);
@@ -413,6 +427,14 @@ button {
 button:hover {
     transform: translateY(-2px);
     box-shadow: 0 12px 24px rgba(249, 115, 22, 0.35);
+}
+
+ 
+.external-link{
+
+    display: flex;
+    justify-content: center;
+    margin: 30px;
 }
 
 
@@ -449,12 +471,12 @@ button:hover {
 /* FOOTER STYLES - Bottom section with gradient background and links*/
 
 footer {
-    background: #1c3d1c;
-    background: linear-gradient(90deg, rgba(28, 61, 28, 1) 0%, rgba(66, 184, 115, 1) 77%, rgba(175, 237, 83, 1) 100%);
+    background: #f75959;
+    background: linear-gradient(90deg,rgba(247, 89, 89, 1) 0%, rgba(253, 81, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
     text-align: center;
     position: relative;
     height: 100px;
-    margin-top: -10;
+    margin-top: -10px;
     clear: both;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -469,39 +491,12 @@ footer p {
 }
 
 footer a {
-    color: #969a96;
+    color: #caccca;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 footer a:hover {
-    color: #e6ece6;
+    color: #f7f4f4;
     text-decoration: underline;
-}
-
-
-.side-bar {
-    width: 250px;
-    height: 100vw;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 999;
-    background-color: #f97316;
-    display:none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding-top: 60px;
-    border-radius: 60px 0px 0px 0px;
-}
-.side-bar li {
-    width: 100%;
-    
-    
-}
-.side-bar li a {
-   
-    width: 100%;
-    
 }

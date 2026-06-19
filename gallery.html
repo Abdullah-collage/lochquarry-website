@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Lochquery Outdoor Center</title>
         <link rel="stylesheet" href="css/style.css">    
-        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>   
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>  
+    
     </head>
     <body>
     
@@ -36,11 +37,17 @@
             </nav>
 
 
-        <main class="gallery-main">
-            
-                            <img id="featured-image" src="images/activities/land/hillwalking_2.jpg" alt="Featured activity image" data-atropos-offset="-5">
+        <main>
+            <p class="main-text">
+                our gallery feature a wide range of activities, from land-based adventures to water-based experiences and rope challenges. Explore the images below to get a glimpse of the excitement and fun that awaits you at Lochquarry Outdoor Centre.
+            </p>
+            <button onclick="location.href='https://www.gla.ac.uk/news/archiveofnews/2024/june/headline_1086096_en.html'">DISCOVER HOW THE OUTDOORS CAN BOOST YOUR MENTAL WELLBEING</button>
+        </main>
+
+        <div class="gallery-main">
+            <img id="featured-image" src="images/activities/land/hillwalking_2.jpg" alt="Featured activity image" data-atropos-offset="-5">
                         
-            <section class="">
+            <section class="caption">
                 
                 <h2 id="caption">HIKING</h2>
             </section>
@@ -57,10 +64,11 @@
                 <img class="thumbnail" src="images/nature/nature_3.jpg" alt="Nature image" onclick="changeImage('images/nature/nature_3.jpg', 'NATURE');">
                 <img class="thumbnail" src="images/nature/nature_2.jpg" alt="Nature image" onclick="changeImage('images/nature/nature_2.jpg', 'NATURE');">
                 <img class="thumbnail" src="images/nature/nature_1.jpg" alt="Nature image" onclick="changeImage('images/nature/nature_1.jpg', 'NATURE');">
-                <img class="thumbnail" src="images/outsourced/img1.jpg" alt="Nature image" onclick="changeImage('images/outsourced/img1.jpg', 'NATURE');">
-                <img class="thumbnail" src="images/outsourced/img2.jpg" alt="Nature image" onclick="changeImage('images/outsourced/img2.jpg', 'GLASGOW');">
+                <img class="thumbnail" src="images/outsourced/img1.jpg" alt="Nature image" onclick="changeImage('images/outsourced/img1.jpg', 'GLASGOW');">
+                <img class="thumbnail" src="images/outsourced/img2.jpg" alt="Nature image" onclick="changeImage('images/outsourced/img2.jpg', 'NATURE');">
             </div>
-        </main>
+        </div>
+      
         <div class="testimonial-container">
                      
 
@@ -124,6 +132,7 @@
                 <p class="message">
                 ‘The archery was brilliant, but not as good as axe throwing, I never thought we’d be allowed to do that! I got one of my axes right in the middle of the target’ 
                 </p>
+                 
         </div>
 
         <div class="card-testimonial">
@@ -165,23 +174,21 @@
             <p><a href="index.html">Home</a> | <a href="land-activities.html">Land Activities</a> | <a href="water-activities.html">Water Activities</a> | <a href="rope-activities.html">Rope Activities</a> | <a href="about.html">About Us</a></p>
         </footer>
         <script>
-            function changeImage(imageFile, captionText) {
-                document.getElementById("featured-image").src = imageFile;
-                document.getElementById("caption").textContent = captionText;
-            }
+            
 
-particlesJS("particles-js", {
-            "particles": {
-          "number": { "value": 80 },
-          "color": { "value": "#ffffff" },
-          "shape": { "type": "circle" },
-          "opacity": { "value": 0.5 },
-          "size": { "value": 3 },
-          "move": { "enable": true, "speed": 2 }
-          }
-          });
+            particlesJS("particles-js", {
+                        "particles": {
+                    "number": { "value": 80 },
+                    "color": { "value": "#ffffff" },
+                    "shape": { "type": "circle" },
+                    "opacity": { "value": 0.5 },
+                    "size": { "value": 3 },
+                    "move": { "enable": true, "speed": 2 }
+                    }
+                    });
        
         </script>
+        <script src="java/script.js"></script>
         
     
     </body>
